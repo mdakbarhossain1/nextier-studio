@@ -14,3 +14,57 @@
 /* Progressive enhancement: content remains readable without JavaScript. */
 .reveal{opacity:1;transform:none}.js .reveal:not(.in-view){opacity:0;transform:translateY(26px)}.js .reveal.in-view{opacity:1;transform:translateY(0)}
 @media(prefers-reduced-motion:reduce){.js .reveal:not(.in-view){opacity:1;transform:none}}
+
+/* WhatsApp Floating Button */
+.whatsapp-float {
+  position: fixed;
+  right: 24px;
+  bottom: 24px;
+  width: 58px;
+  height: 58px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #25D366;
+  color: #ffffff;
+  border-radius: 50%;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.18);
+  text-decoration: none;
+  z-index: 9999;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.whatsapp-float:hover {
+  transform: translateY(-4px) scale(1.04);
+  box-shadow: 0 10px 26px rgba(0, 0, 0, 0.22);
+}
+
+.whatsapp-float:focus-visible {
+  outline: 3px solid #171717;
+  outline-offset: 4px;
+}
+
+.whatsapp-float svg {
+  display: block;
+  flex-shrink: 0;
+}
+
+@media (max-width: 600px) {
+  .whatsapp-float {
+    right: 16px;
+    bottom: 16px;
+    width: 52px;
+    height: 52px;
+  }
+
+  .whatsapp-float svg {
+    width: 27px;
+    height: 27px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .whatsapp-float {
+    transition: none;
+  }
+}

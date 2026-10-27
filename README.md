@@ -19,7 +19,7 @@ A fully static multi-page website for Nextier Studio. Built with native HTML, CS
 
 ## Required before publishing
 
-1. **Contact email:** replace every instance of `hello@nextierstudio.com` with the inbox you actually own. It is a placeholder.
+1. **Contact email:** replace every instance of `nextier.studio@gmail.com` with the inbox you actually own. It is a placeholder.
 2. **EmailJS:** edit `assets/js/config.js` with your EmailJS **public key**, service ID and template ID. Create a template that uses `from_name`, `reply_to`, `company`, `service`, `budget`, and `message`. Use `reply_to` as the template's reply-to address. Until configured, the form opens the visitor's email application rather than claiming the message was sent. Enable EmailJS domain restriction and consider bot protection/rate limits. Never include a private key.
 3. **Domain:** Replace `https://nextierstudio.com/` in HTML metadata, `robots.txt`, and `sitemap.xml` with the actual launch domain if different. The default is a placeholder; confirm ownership before launch.
 4. **Portfolio permissions:** The featured projects may reflect work from previous employers or studios. Get permission to publish case-study details and replace all *illustrative* HTML mockups with approved screenshots. Do not claim outcomes, results, testimonials or independent agency ownership unless verified.
